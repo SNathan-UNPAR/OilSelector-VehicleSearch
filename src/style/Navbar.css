@@ -1,0 +1,57 @@
+#main-container {
+    display: flex;
+    margin: 0;
+    height: 3rem;
+    width: 100vw;
+    background-color: gray;
+    max-height: 7%;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    align-items: stretch;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+    /* background-color: white; */
+}
+
+.option-container {
+    height: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.option-container>div {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+
+.selected-option {
+    opacity: 100%;
+}
+
+.unselected-option {
+    opacity: 50%;
+}
+
+/* ketinggian height barnya */
+.bar {
+    width: 100%;
+    background-color: black;
+}
+
+.selected-bar {
+    opacity: 100%;
+}
+
+.unselected-bar {
+    opacity: 0%;
+}
