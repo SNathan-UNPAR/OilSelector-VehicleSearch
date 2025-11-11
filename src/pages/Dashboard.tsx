@@ -1,12 +1,15 @@
-import Navbar from './navbar.tsx'
+import Navbar from './Navbar.tsx'
+import '../style/Dashboard.css'
 
-function Dashboard(){
+function Dashboard() {
 
-    return(
+    return (
         <>
-            <div className='Main'>
-                <div id='Navbar'>
-                    <Navbar/>
+            <div className='main-container'>
+                <div className='navbar-container'>
+                    <Navbar />
+
+
                 </div>
             </div>
         </>
