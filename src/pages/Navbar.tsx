@@ -19,7 +19,6 @@ function Navbar() {
                     <div className='vehicle-search-container unselected-option'>
                         <img src="src\assets\car.png" alt="" />
                         <span>Vehicle Search</span>
-
                     </div>
                     <div className='bar unselected-bar'></div>
                 </div>

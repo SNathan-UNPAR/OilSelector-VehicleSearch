@@ -1,9 +1,10 @@
+.navbar-container{
+    background-color: grey;
+}
 #main-container {
     display: flex;
-    margin: 0;
     height: 3rem;
     width: 100vw;
-    background-color: gray;
     max-height: 7%;
     justify-content: center;
     align-items: center;
@@ -26,7 +27,7 @@ img {
 }
 
 .option-container>div {
-    padding-top: 0.5rem;
+    padding-top: 0.4rem;
     display: flex;
     justify-content: center;
     align-items: center;

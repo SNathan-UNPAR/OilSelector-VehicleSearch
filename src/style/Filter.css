@@ -1,0 +1,136 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    gap:1rem;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2rem;
+    align-items: center;
+    width: 30vw;
+}
+.country-dropdown{
+    display: flex;
+    border:1px;
+    border-style:double;
+    border-radius:5px;
+    border-color: black;
+    height: 3rem;
+    width: 30vw;
+    flex-direction: row;
+}
+.country-dropdown .country-dropdown-container{
+    display: flex;
+    width: 25vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.vehicleType-dropdown{
+    display: flex;
+    border:1px;
+    border-style:double;
+    border-radius:5px;
+    border-color: black;
+    height: 3rem;
+    width: 30vw;
+    flex-direction: row;
+}
+.vehicleType-dropdown .vehicleType-dropdown-container{
+    display: flex;
+    width: 25vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.manufacture-dropdown{
+    display: flex;
+    border:1px;
+    border-style:double;
+    border-radius:5px;
+    border-color: black;
+    height: 3rem;
+    width: 30vw;
+    flex-direction: row;
+}
+.manufacture-dropdown .manufacture-dropdown-container{
+    display: flex;
+    width: 25vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.model-dropdown{
+    display: flex;
+    border:1px;
+    border-style:double;
+    border-radius:5px;
+    border-color: black;
+    height: 3rem;
+    width: 30vw;
+    flex-direction: row;
+}
+.model-dropdown .model-dropdown-container{
+    display: flex;
+    width: 25vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.engineSize-dropdown{
+    display: flex;
+    border:1px;
+    border-style:double;
+    border-radius:5px;
+    border-color: black;
+    height: 3rem;
+    width: 30vw;
+    flex-direction: row;
+}
+.engineSize-dropdown .engineSize-dropdown-container{
+    display: flex;
+    width: 25vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.year-dropdown{
+    display: flex;
+    border:1px;
+    border-style:double;
+    border-radius:5px;
+    border-color: black;
+    height: 3rem;
+    width: 30vw;
+    flex-direction: row;
+}
+.year-dropdown .year-dropdown-container{
+    display: flex;
+    width: 25vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.fuelType-dropdown{
+    display: flex;
+    border:1px;
+    border-style:double;
+    border-radius:5px;
+    border-color: black;
+    height: 3rem;
+    width: 30vw;
+    flex-direction: row;
+}
+.fuelType-dropdown .fuelType-dropdown-container{
+    display: flex;
+    width: 25vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bar{
+    width: 5vw;
+}

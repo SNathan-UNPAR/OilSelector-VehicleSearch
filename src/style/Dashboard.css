@@ -6,8 +6,20 @@
 }
 
 .main-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
     height: 100vh;
     width: 100vw;
     
+}
+.filter-result-container{
+    display: flex;
+}
+.filter-container{
+    width: 30vw;
+}
+.result-container{
+    width: 70vw;
 }
 
