@@ -131,6 +131,14 @@
     justify-content: center;
     align-items: center;
 }
-.bar{
-    width: 5vw;
+.main-container img{
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
