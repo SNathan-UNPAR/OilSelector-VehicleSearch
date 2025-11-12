@@ -15,11 +15,12 @@
 .country-dropdown{
     display: flex;
     border:1px;
+    margin-left: 10px;
     border-style:double;
     border-radius:5px;
     border-color: black;
     height: 3rem;
-    width: 30vw;
+    width: 28vw;
     flex-direction: row;
 }
 .country-dropdown .country-dropdown-container{
@@ -32,11 +33,12 @@
 .vehicleType-dropdown{
     display: flex;
     border:1px;
+    margin-left: 10px;
     border-style:double;
     border-radius:5px;
     border-color: black;
     height: 3rem;
-    width: 30vw;
+    width: 28vw;
     flex-direction: row;
 }
 .vehicleType-dropdown .vehicleType-dropdown-container{
@@ -49,11 +51,12 @@
 .manufacture-dropdown{
     display: flex;
     border:1px;
+    margin-left: 10px;
     border-style:double;
     border-radius:5px;
     border-color: black;
     height: 3rem;
-    width: 30vw;
+    width: 28vw;
     flex-direction: row;
 }
 .manufacture-dropdown .manufacture-dropdown-container{
@@ -66,11 +69,12 @@
 .model-dropdown{
     display: flex;
     border:1px;
+    margin-left: 10px;
     border-style:double;
     border-radius:5px;
     border-color: black;
     height: 3rem;
-    width: 30vw;
+    width: 28vw;
     flex-direction: row;
 }
 .model-dropdown .model-dropdown-container{
@@ -83,11 +87,12 @@
 .engineSize-dropdown{
     display: flex;
     border:1px;
+    margin-left: 10px;
     border-style:double;
     border-radius:5px;
     border-color: black;
     height: 3rem;
-    width: 30vw;
+    width: 28vw;
     flex-direction: row;
 }
 .engineSize-dropdown .engineSize-dropdown-container{
@@ -100,11 +105,12 @@
 .year-dropdown{
     display: flex;
     border:1px;
+    margin-left: 10px;
     border-style:double;
     border-radius:5px;
     border-color: black;
     height: 3rem;
-    width: 30vw;
+    width: 28vw;
     flex-direction: row;
 }
 .year-dropdown .year-dropdown-container{
@@ -117,11 +123,12 @@
 .fuelType-dropdown{
     display: flex;
     border:1px;
+    margin-left: 10px;
     border-style:double;
     border-radius:5px;
     border-color: black;
     height: 3rem;
-    width: 30vw;
+    width: 28vw;
     flex-direction: row;
 }
 .fuelType-dropdown .fuelType-dropdown-container{
