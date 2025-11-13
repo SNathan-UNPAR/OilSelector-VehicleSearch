@@ -10,60 +10,53 @@ function Filter(){
                     <img src="src/assets/filter.svg" alt="" />
                 </div>
                 <div className='country-dropdown'>
-                    <div className='country-dropdown-container'>
-                        <span>Country</span>
-                    </div>
-                    <div className='dropdown-img'>
-                        <img src="src/assets/dropdown.svg" alt="" />
-                    </div>
+                    <select className='country-dropdown-container' name="" id="">
+                        <option value="" disabled selected hidden>Country</option>
+                        <option value="">Indonesia</option>
+                        <option value="">Malaysia</option>
+                    </select>
                 </div>
                 <div className='vehicleType-dropdown'>
-                    <div className='vehicleType-dropdown-container'>
-                        <span>Vehicle Type</span>
-                    </div>
-                    <div className='dropdown-img'>
-                        <img src="src/assets/dropdown.svg" alt="" />
-                    </div>
+                    <select className='vehicleType-dropdown-container' name="" id="">
+                        <option value="" disabled selected hidden>Vehicle Type</option>
+                        <option value="">Vehicle Type 1</option>
+                        <option value="">Vehicle Type 2</option>
+                    </select>
                 </div>
                 <div className='manufacture-dropdown'>
-                    <div className='manufacture-dropdown-container'>
-                        <span>Manufacture</span>
-                    </div>
-                    <div className='dropdown-img'>
-                        <img src="src/assets/dropdown.svg" alt="" />
-                    </div>
+                    <select className='manufacture-dropdown-container' name="" id="">
+                        <option value="" disabled selected hidden>Manufacture</option>
+                        <option value="">Manufacture 1</option>
+                        <option value="">manufacture 2</option>
+                    </select>
                 </div>
                 <div className='model-dropdown'>
-                    <div className='model-dropdown-container'>
-                        <span>Model</span>
-                    </div>
-                    <div className='dropdown-img'>
-                        <img src="src/assets/dropdown.svg" alt="" />
-                    </div>
+                    <select className='model-dropdown-container' name="" id="">
+                        <option value="" disabled selected hidden>Model</option>
+                        <option value="">Model 1</option>
+                        <option value="">Model 2</option>
+                    </select>
                 </div>
                 <div className='engineSize-dropdown'>
-                    <div className='engineSize-dropdown-container'>
-                        <span>Engine Size</span>
-                    </div>
-                    <div className='dropdown-img'>
-                        <img src="src/assets/dropdown.svg" alt="" />
-                    </div>
+                    <select className='engineSize-dropdown-container' name="" id="">
+                        <option value="" disabled selected hidden>Engine Size</option>
+                        <option value="">Engine Size 1</option>
+                        <option value="">Engine Size 2</option>
+                    </select>
                 </div>
                 <div className='year-dropdown'>
-                    <div className='year-dropdown-container'>
-                        <span>Year</span>
-                    </div>
-                    <div className='dropdown-img'>
-                        <img src="src/assets/dropdown.svg" alt="" />
-                    </div>
+                    <select className='year-dropdown-container' name="" id="">
+                        <option value="" disabled selected hidden>Year</option>
+                        <option value="">2001</option>
+                        <option value="">2002</option>
+                    </select>
                 </div>
                 <div className='fuelType-dropdown'>
-                    <div className='fuelType-dropdown-container'>
-                        <span>Fuel Type</span>
-                    </div>
-                    <div className='dropdown-img'>
-                        <img src="src/assets/dropdown.svg" alt="" />
-                    </div>
+                    <select className='fuelType-dropdown-container' name="" id="">
+                        <option value="" disabled selected hidden>Fuel Type</option>
+                        <option value="">Fuel Type 1</option>
+                        <option value="">Fuel Type 2</option>
+                    </select>
                 </div>
 
             </div>
