@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "country": "country_name",
+    "type": "vehicle_type",
+    "make": "manufacturer_name",
+    "model": "model_name",
+    "year_start": 2004,
+    "year_end": 2025,
+    "engine_size": "engine_size",
+    "fuel_type": "fuel_name"
+}
