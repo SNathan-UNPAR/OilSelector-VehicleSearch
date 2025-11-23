@@ -1,3 +1,4 @@
+import '../style/Result.css'
 
 function Result(){
 
@@ -5,7 +6,9 @@ function Result(){
 
     return(
         <>
-        
+            <div className="result-main-container">
+
+            </div>
         </>
     )
 }

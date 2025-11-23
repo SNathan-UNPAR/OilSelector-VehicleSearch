@@ -4,7 +4,7 @@ function Filter(){
 
     return(
         <>
-            <div className='main-container'>
+            <div className='filter-main-container'>
                 <div className='header'>
                     Vehicle Search
                     <img src="src/assets/filter.svg" alt="" />
