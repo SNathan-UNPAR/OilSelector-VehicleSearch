@@ -7,7 +7,13 @@ import {
   flexRender,
 } from '@tanstack/react-table';
 
-function Result(){
+import type { Vehicle } from '../utils/Vehicle';
+
+interface ResultProps {
+  data: Vehicle[];
+}
+
+function Result({ data }: ResultProps){
 
     // Column Definiton, this is the list of column and the key
     // Using memoization to prevent re-rendering
@@ -38,7 +44,7 @@ function Result(){
     );
 
     const table = useReactTable({
-        data: vehicleData,
+        data,
         columns,
         getCoreRowModel: getCoreRowModel(), // core logic
     });
