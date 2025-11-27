@@ -1,17 +1,4 @@
-
-// data type to store JSON file
-export type Vehicle = {
-  id: number;
-  country: string;
-  type: string;
-  make: string;
-  model: string;
-  year_start: number;
-  year_end: number;
-  engine_size: string;
-  fuel_type: string;
-};
-
+import type { Vehicle } from "./Vehicle";
 // // import JSON file to be processed in TypeScript
 // // *replace path with local JSON direcftory path
 // import rawData from "./dummy_data/dummy_small.json" with {type:"json"};
@@ -31,7 +18,7 @@ export type Vehicle = {
 // console.log(filtered);
 
 // filters
-function country_option(data: Vehicle[]): string[]{
+export function country_option(data: Vehicle[]): string[]{
   const countries = data
       // get all value from all instance
       .map(vehicle => vehicle.country)
@@ -43,7 +30,7 @@ function country_option(data: Vehicle[]): string[]{
   return countries;
 }
 
-function type_option(data: Vehicle[]): string[]{
+export function type_option(data: Vehicle[]): string[]{
   const types = data
       .map(vehicle => vehicle.type)
       .filter((type, index, self) => self.indexOf(type) === index)
@@ -52,7 +39,7 @@ function type_option(data: Vehicle[]): string[]{
   return types;
 }
 
-function make_option(data: Vehicle[]): string[]{
+export function make_option(data: Vehicle[]): string[]{
   const makes = data
       .map(vehicle => vehicle.make)
       .filter((make, index, self) => self.indexOf(make) === index)
@@ -61,7 +48,7 @@ function make_option(data: Vehicle[]): string[]{
   return makes;
 }
 
-function model_option(data: Vehicle[]): string[]{
+export function model_option(data: Vehicle[]): string[]{
   const models = data
       .map(vehicle => vehicle.model)
       .filter((model, index, self) => self.indexOf(model) === index)
@@ -70,7 +57,7 @@ function model_option(data: Vehicle[]): string[]{
   return models;
 }
 
-function year_option(data: Vehicle[]): number[]{
+export function year_option(data: Vehicle[]): number[]{
   const minYear = Math.min(...data.map(vehicle => vehicle.year_start));
   const maxYear = Math.max(...data.map(vehicle => vehicle.year_end));
   const years = [];
@@ -81,7 +68,7 @@ function year_option(data: Vehicle[]): number[]{
   return years;
 }
 
-function engine_option(data: Vehicle[]): string[]{
+export function engine_option(data: Vehicle[]): string[]{
   const engines = data
       .map(vehicle => vehicle.engine_size)
       .filter((engine, index, self) => self.indexOf(engine) === index)
@@ -90,7 +77,7 @@ function engine_option(data: Vehicle[]): string[]{
   return engines;
 }
 
-function fuel_option(data: Vehicle[]): string[]{
+export function fuel_option(data: Vehicle[]): string[]{
   const fuels = data
       .map(vehicle => vehicle.fuel_type)
       .filter((fuel, index, self) => self.indexOf(fuel) === index)
