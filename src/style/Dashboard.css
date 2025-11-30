@@ -18,16 +18,16 @@
 
 .navbar-container {
     grid-area: header;
-    background: #ffcccc;
+    /* background: #ffcccc; */
 }
 
 .filter-container {
     grid-area: sidebar;
-    background: #ccffcc;
+    /* background: #ccffcc; */
 }
 .result-container {
     grid-area: main;
-    background: #ccccff;
+    /* background: #ccccff; */
 }
 
 @media (max-width: 768px) {

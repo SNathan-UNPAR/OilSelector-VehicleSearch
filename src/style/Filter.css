@@ -39,6 +39,7 @@ select {
 .country-dropdown-container option {
     display: flex;
     text-align: center;
+    padding-right: 2%;
 }
 
 .vehicleType-dropdown {
