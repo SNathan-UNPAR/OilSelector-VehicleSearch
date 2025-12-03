@@ -20,7 +20,7 @@ interface SelectedFilters {
 }
 
 function Dashboard() {
-    let data = rawData as Vehicle[];
+    const data = rawData as Vehicle[];
 
     // dashboard stores selected filter
     const [selectedFilter, setSelectedFilter] = useState<SelectedFilters>({});
@@ -38,6 +38,38 @@ function Dashboard() {
             (!selectedFilter.fuel || vehicle.fuel_type === selectedFilter.fuel)
         );
     });
+
+    // Handling changes if previous filter is changing
+    const handleFilterChange = (key: keyof SelectedFilters, value: string|number) => {
+        setSelectedFilter(prev => {
+            const newState = { ...prev, [key]: value };
+
+            if (key === 'country') {
+                delete newState.type;
+                delete newState.make;
+                delete newState.model;
+                delete newState.engine;
+                delete newState.year;
+                delete newState.fuel;
+            } else if (key === 'type') {
+                delete newState.make;
+                delete newState.model;
+                delete newState.engine;
+                delete newState.year;
+                delete newState.fuel;
+            } else if (key === 'make') {
+                delete newState.model;
+                delete newState.engine;
+                delete newState.year;
+                delete newState.fuel;
+            } else if (key === 'model') {
+                delete newState.engine;
+                delete newState.year;
+                delete newState.fuel;
+            }
+            return newState;
+        });
+    }
         
     return (
         <>
@@ -51,9 +83,7 @@ function Dashboard() {
                     <Filter 
                         data={filteredData}
                         selectedFilters={selectedFilter}
-                        onSelect={(key, value) =>
-                                    setSelectedFilter(prev => ({ ...prev, [key]: value }))
-                                }
+                        onSelect={handleFilterChange}
                     />
                 </div>
 

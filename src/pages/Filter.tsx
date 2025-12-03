@@ -80,6 +80,7 @@ function Filter({ data, selectedFilters, onSelect }: FilterProps){
                         className='vehicleType-dropdown-container'
                         value={selectedFilters.type || ""}
                         onChange={(e) => onSelect("type", e.target.value)}
+                        disabled={!selectedFilters.country}
                     >
                         <option value="" disabled hidden>Vehicle Type</option>
                         {types.map((t) => (
@@ -93,6 +94,7 @@ function Filter({ data, selectedFilters, onSelect }: FilterProps){
                         className='manufacture-dropdown-container'
                         value={selectedFilters.make || ""}
                         onChange={(e) => onSelect("make", e.target.value)}
+                        disabled={!selectedFilters.type}
                     >
                         <option value="" disabled hidden>Manufacture</option>
                         {makes.map((m) => (
@@ -106,6 +108,7 @@ function Filter({ data, selectedFilters, onSelect }: FilterProps){
                         className='model-dropdown-container'
                         value={selectedFilters.model || ""}
                         onChange={(e) => onSelect("model", e.target.value)}
+                        disabled={!selectedFilters.make}
                     >
                         <option value="" disabled hidden>Model</option>
                         {models.map((m) => (
@@ -119,6 +122,7 @@ function Filter({ data, selectedFilters, onSelect }: FilterProps){
                         className='engineSize-dropdown-container'
                         value={selectedFilters.engine || ""}
                         onChange={(e) => onSelect("engine", e.target.value)}
+                        disabled={!selectedFilters.model}
                     >
                         <option value="" disabled hidden>Engine Size</option>
                         {engines.map((e) => (
@@ -132,6 +136,7 @@ function Filter({ data, selectedFilters, onSelect }: FilterProps){
                         className='year-dropdown-container'
                         value={selectedFilters.year || ""}
                         onChange={(e) => onSelect("year", Number(e.target.value))}
+                        disabled={!selectedFilters.model}
                     >
                         <option value="" disabled hidden>Year</option>
                         {years.map((y) => (
@@ -145,6 +150,7 @@ function Filter({ data, selectedFilters, onSelect }: FilterProps){
                         className='fuelType-dropdown-container'
                         value={selectedFilters.fuel || ""}
                         onChange={(e) => onSelect("fuel", e.target.value)}
+                        disabled={!selectedFilters.model}
                     >
                         <option value="" disabled hidden>Fuel Type</option>
                         {fuels.map((f) => (
