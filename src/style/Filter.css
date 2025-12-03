@@ -1,7 +1,3 @@
-select {
-    /* padding: 2rem; */
-}
-
 .filter-main-container {
     display: flex;
     flex-direction: column;
@@ -15,6 +11,8 @@ select {
     align-items: center;
     margin-top: 2rem;
     margin-left: 2rem;
+    font-weight: bolder;
+    font-size: large;
 }
 
 .country-dropdown {
@@ -23,23 +21,28 @@ select {
     margin-right: 2rem;
     height: 3rem;
     flex-direction: row;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(192, 190, 190);
 }
 
 .country-dropdown-container {
     display: flex;
     min-width: 100%;
-    border-radius: 5px;
     border: 0;
     background-color: #e7e7e7;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .country-dropdown-container option {
     display: flex;
-    text-align: center;
-    padding-right: 2%;
 }
 
 .vehicleType-dropdown {
@@ -48,22 +51,28 @@ select {
     margin-right: 2rem;
     height: 3rem;
     flex-direction: row;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(192, 190, 190);
 }
 
 .vehicleType-dropdown-container {
     display: flex;
     min-width: 100%;
-    border-radius: 5px;
     border: 0;
     background-color: #e7e7e7;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .vehicleType-dropdown-container option {
     display: flex;
-    text-align: center;
 }
 
 .manufacture-dropdown {
@@ -72,21 +81,27 @@ select {
     margin-right: 2rem;
     height: 3rem;
     flex-direction: row;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(192, 190, 190);
 }
 
 .manufacture-dropdown-container {
     display: flex;
     min-width: 100%;
-    border-radius: 5px;
     border: 0;
     background-color: #e7e7e7;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .manufacture-dropdown-container option {
-    text-align: center;
     display: flex;
 }
 
@@ -96,22 +111,28 @@ select {
     margin-right: 2rem;
     height: 3rem;
     flex-direction: row;
+        background-color: #e7e7e7;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(192, 190, 190);
 }
 
 .model-dropdown-container {
     display: flex;
     min-width: 100%;
-    border-radius: 5px;
     border: 0;
     background-color: #e7e7e7;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .model-dropdown-container option {
     display: flex;
-    text-align: center;
 }
 
 .engineSize-dropdown {
@@ -120,22 +141,28 @@ select {
     margin-right: 2rem;
     height: 3rem;
     flex-direction: row;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(192, 190, 190);
 }
 
 .engineSize-dropdown-container {
     display: flex;
     min-width: 100%;
-    border-radius: 5px;
     border: 0;
     background-color: #e7e7e7;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .engineSize-dropdown-container option {
     display: flex;
-    text-align: center;
 }
 
 .year-dropdown {
@@ -144,22 +171,28 @@ select {
     margin-right: 2rem;
     height: 3rem;
     flex-direction: row;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(192, 190, 190);
 }
 
 .year-dropdown-container {
     display: flex;
     min-width: 100%;
-    border-radius: 5px;
     border: 0;
     background-color: #e7e7e7;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .year-dropdown-container option {
     display: flex;
-    text-align: center;
 }
 
 .fuelType-dropdown {
@@ -168,22 +201,28 @@ select {
     margin-right: 2rem;
     height: 3rem;
     flex-direction: row;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(192, 190, 190);
 }
 
 .fuelType-dropdown-container {
     display: flex;
     min-width: 100%;
-    border-radius: 5px;
     border: 0;
     background-color: #e7e7e7;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .fuelType-dropdown-container option {
     display: flex;
-    text-align: center;
 }
 
 .filter-main-container img {

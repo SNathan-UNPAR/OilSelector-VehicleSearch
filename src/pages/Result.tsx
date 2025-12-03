@@ -1,6 +1,6 @@
 import '../style/Result.css'
 import React, { useMemo } from 'react';
-import vehicleData from '../data/dummy_small.json'
+// import vehicleData from '../data/dummy_small.json'
 import {
   useReactTable,
   getCoreRowModel,
