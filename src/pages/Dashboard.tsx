@@ -88,7 +88,7 @@ function Dashboard() {
                 </div>
 
                 <div className='result-container'>
-                    <Result data={filteredData}/>
+                    <Result data={filteredData} filters={selectedFilter}/>
                 </div>
 
             </div>
