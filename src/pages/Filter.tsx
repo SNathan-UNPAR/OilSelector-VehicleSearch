@@ -238,7 +238,9 @@ function Filter({ data, selectedFilters, onSelect }: FilterProps) {
                     </>
                 )}
 
-
+                <div className='clear-button-container'>
+                    <button className='clear-button' onClick={() => onSelect("country", "")}>Clear Form</button>
+                </div>
 
             </div>
         </>

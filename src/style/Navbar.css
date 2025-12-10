@@ -1,5 +1,5 @@
 .navbar-container{
-    background-color: grey;
+    background-color: rgb(192, 190, 190);
 }
 #main-container {
     display: flex;
@@ -8,8 +8,9 @@
     max-height: 7%;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
-    align-items: stretch;
+    gap: clamp(1rem, 8vw, 8rem);
+    /* align-items: stretch; */
+    padding-top:4px;
 }
 
 img {
@@ -22,8 +23,9 @@ img {
     height: 1fr;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 100%;
+    cursor: pointer;  
 }
 
 .option-container>div {
@@ -40,19 +42,6 @@ img {
 }
 
 .unselected-option {
-    opacity: 50%;
+    opacity: 35%;
 }
 
-/* ketinggian height barnya */
-.bar {
-    width: 100%;
-    background-color: black;
-}
-
-.selected-bar {
-    opacity: 100%;
-}
-
-.unselected-bar {
-    opacity: 0%;
-}
