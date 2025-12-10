@@ -25,7 +25,9 @@ img {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
-    cursor: pointer;  
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .option-container>div {
@@ -39,6 +41,7 @@ img {
 
 .selected-option {
     opacity: 100%;
+    font-weight: bold;
 }
 
 .unselected-option {
