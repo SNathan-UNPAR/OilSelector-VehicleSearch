@@ -1,4 +1,4 @@
-import Navbar from './Navbar.tsx'
+// import Navbar from './Navbar.tsx'
 import Filter from './Filter.tsx'
 import Result from './Result.tsx'
 import { useState } from 'react'
@@ -73,24 +73,16 @@ function Dashboard() {
         
     return (
         <>
-            <div className='main-container'>
+            <div className='filter-container'>
+                <Filter 
+                    data={filteredData}
+                    selectedFilters={selectedFilter}
+                    onSelect={handleFilterChange}
+                />
+            </div>
 
-                <div className='navbar-container'>
-                    <Navbar />
-                </div>
-
-                <div className='filter-container'>
-                    <Filter 
-                        data={filteredData}
-                        selectedFilters={selectedFilter}
-                        onSelect={handleFilterChange}
-                    />
-                </div>
-
-                <div className='result-container'>
-                    <Result data={filteredData} filters={selectedFilter}/>
-                </div>
-
+            <div className='result-container'>
+                <Result data={filteredData} filters={selectedFilter}/>
             </div>
         </>
     )

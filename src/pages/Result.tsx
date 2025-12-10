@@ -68,7 +68,7 @@ function Result({ data,filters }: ResultProps){
             {!isFilterComplete ? (
                 // JIKA BELUM LENGKAP: Tampilkan pesan
                 <div className="empty-state">
-                    <p>Harap pilih <strong>Country</strong>, <strong>Make</strong>, dan <strong>Type</strong> untuk melihat hasil.</p>
+                    <p>Harap pilih <strong>Country</strong>, <strong>Manufacturer</strong>, dan <strong>Type</strong> untuk melihat hasil.</p>
                 </div>
             ) : (
                 // JIKA SUDAH LENGKAP: Tampilkan Tabel
