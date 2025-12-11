@@ -14,7 +14,6 @@ function Navbar() {
 
     return (
         <div id='main-container'>
-            {/* Quick Search -> Arahkan ke rute acak untuk memicu 404 */}
             <div className='option-container' onClick={() => navigate('/quick-search')}>
                 <div className={`quick-search-container ${isActive('/quick-search')}`}>
                     <img src={findIcon} alt="Quick Search" />
@@ -22,7 +21,6 @@ function Navbar() {
                 </div>
             </div>
 
-            {/* Vehicle Search -> Arahkan ke Dashboard (Home) */}
             <div className='option-container' onClick={() => navigate('/')}>
                 <div className={`vehicle-search-container ${isActive('/')}`}>
                     <img src={carIcon} alt="Vehicle Search" />
@@ -30,7 +28,6 @@ function Navbar() {
                 </div>
             </div>
 
-            {/* Oil Search -> Arahkan ke rute acak untuk memicu 404 */}
             <div className='option-container' onClick={() => navigate('/oil-search')}>
                 <div className={`oil-search-container ${isActive('/oil-search')}`}>
                     <img src={oilIcon} alt="Oil Search" />

@@ -64,8 +64,6 @@ function Result({ data, filters }: ResultProps){
             },
         },
     });
-
-    const isFilterComplete = filters.country && filters.make && filters.type;
     const requiredFilters = {
         country: "Country",
         make: "Manufacturer",
@@ -75,8 +73,10 @@ function Result({ data, filters }: ResultProps){
         .filter(([key]) => !filters[key as keyof SelectedFilters])
         .map(([, label]) => label);
     return (
-        <div className='result-table-container' style={{ display: 'flex', flexDirection: 'column', minHeight: '650px' }}>
-            {!isFilterComplete ? (
+        <div className='result-table-container'>
+            {/* Conditional Rendering */}
+
+            {missingFilters.length > 0 ? (
                 <div className="empty-state">
                     <p>Harap pilih <strong>{missingFilters.join(", ")}</strong> untuk melihat hasil.</p>                </div>
             ) : (
