@@ -26,3 +26,40 @@
 th:last-child {
     border-right: none;
 }
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: auto; 
+    padding-top: 20px;
+    text-align: center;
+}
+.pagination-controls span{
+    font-weight: 500;
+}
+.page-btn {
+    height: 50px;
+    width: 100px;
+    background-color: #fff; /* Background putih */
+    border: 1px solid rgb(192, 190, 190); /* Border abu-abu */
+    border-radius: 20px;
+    color: #333;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.page-btn:hover:not(:disabled) {
+    background-color:  rgb(192, 190, 190); /* Abu-abu sangat muda */
+    border-color: #999;
+}
+
+.page-btn:disabled {
+    color: #ccc;
+    background-color: #fafafa;
+    border-color: #e6e6e6;
+    cursor: not-allowed;
+}
