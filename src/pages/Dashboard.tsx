@@ -3,9 +3,9 @@ import Filter from './Filter.tsx'
 import Result from './Result.tsx'
 import { useState } from 'react'
 
-// JSON import
+
 import type { Vehicle } from '../utils/Vehicle'
-import rawData from '../data/dummy_large.json' // temporary data, data will be loaded from dashboard in the future
+import rawData from '../data/dummy_large.json' 
 
 import '../style/Dashboard.css'
 

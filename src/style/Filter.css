@@ -25,7 +25,6 @@
     transition: transform 0.2s;
     opacity: 0.5;
     flex-shrink: 0;
-    /* box-sizing: content-box; */
     padding: 4px;
 }
 
@@ -87,7 +86,6 @@
     font-size: large;
 }
 
-/* Container div */
 .clear-button-container {
     display: flex;
     flex-direction: row;

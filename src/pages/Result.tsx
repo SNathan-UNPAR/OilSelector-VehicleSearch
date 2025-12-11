@@ -1,12 +1,10 @@
 import '../style/Result.css'
-import React, { useMemo, useState } from 'react';
-import Dashboard from './Dashboard';
-// import vehicleData from '../data/dummy_small.json'
+import { useMemo } from 'react';
+
 import {
     useReactTable,
     getCoreRowModel,
     flexRender,
-    type Table,
 } from '@tanstack/react-table';
 
 import type { Vehicle } from '../utils/Vehicle';
@@ -28,13 +26,12 @@ interface ResultProps {
 
 function Result({ data, filters }: ResultProps) {
 
-    // Column Definiton, this is the list of column and the key
-    // Using memoization to prevent re-rendering
+
     const columns = useMemo(
         () => [
             {
                 header: 'Model',
-                accessorKey: 'model', // key in data object
+                accessorKey: 'model',
             },
             {
                 header: 'Engine Size',
@@ -60,7 +57,6 @@ function Result({ data, filters }: ResultProps) {
         columns,
         getCoreRowModel: getCoreRowModel(), // core logic
     });
-    const isFilterComplete = filters.country && filters.make && filters.type;
     const requiredFilters = {
         country: "Country",
         make: "Manufacturer",
@@ -72,15 +68,13 @@ function Result({ data, filters }: ResultProps) {
 
     return (
         <div className='result-table-container'>
-            {/* 4. Terapkan Conditional Rendering */}
+            {/* Conditional Rendering */}
 
             {missingFilters.length > 0 ? (
-                // JIKA BELUM LENGKAP: Tampilkan pesan
                 <div className="empty-state">
                     <p>Harap pilih <strong>{missingFilters.join(", ")}</strong> untuk melihat hasil.</p>
                 </div>
             ) : (
-                // JIKA SUDAH LENGKAP: Tampilkan Tabel
                 <table className='result-table'>
                     <thead>
                         {table.getHeaderGroups().map((headerGroup) => (

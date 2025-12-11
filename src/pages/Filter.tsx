@@ -1,5 +1,5 @@
 import '../style/Filter.css'
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 // JSON import
 import type { Vehicle } from '../utils/Vehicle'
