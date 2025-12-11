@@ -103,10 +103,9 @@
     border-width: 1px;
     background-color: #e7e7e7;   
     border-color: rgb(192, 190, 190);
-    cursor: pointer;              
+    cursor: pointer;     
 }
 
-/* Hover effect for the button */
 .clear-button:hover {
     background-color: rgb(192, 190, 190);
 }
