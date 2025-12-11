@@ -75,8 +75,6 @@ function Result({ data, filters }: ResultProps){
         .filter(([key]) => !filters[key as keyof SelectedFilters])
         .map(([, label]) => label);
     return (
-        // PERUBAHAN 1: Tambahkan style flex dan minHeight pada container utama
-        // minHeight: '650px' adalah estimasi tinggi tabel saat 10 baris. Sesuaikan angka ini jika perlu.
         <div className='result-table-container' style={{ display: 'flex', flexDirection: 'column', minHeight: '650px' }}>
             {!isFilterComplete ? (
                 <div className="empty-state">
@@ -128,7 +126,6 @@ function Result({ data, filters }: ResultProps){
                                 className="page-btn"
                                 onClick={() => table.previousPage()}
                                 disabled={!table.getCanPreviousPage()}
-                                // Perbaikan logika cursor: gunakan getCanPreviousPage untuk tombol Previous
                             >
                                 Previous
                             </button>

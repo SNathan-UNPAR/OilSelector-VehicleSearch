@@ -108,7 +108,6 @@
     cursor: pointer;     
 }
 
-/* Hover effect for the button */
 .clear-button:hover {
     background-color: rgb(192, 190, 190);
 }

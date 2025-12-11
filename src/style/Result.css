@@ -41,8 +41,8 @@ th:last-child {
 .page-btn {
     height: 50px;
     width: 100px;
-    background-color: #fff; /* Background putih */
-    border: 1px solid rgb(192, 190, 190); /* Border abu-abu */
+    background-color: #fff; 
+    border: 1px solid rgb(192, 190, 190); 
     border-radius: 20px;
     color: #333;
     padding: 8px 16px;
@@ -53,7 +53,7 @@ th:last-child {
 }
 
 .page-btn:hover:not(:disabled) {
-    background-color:  rgb(192, 190, 190); /* Abu-abu sangat muda */
+    background-color:  rgb(192, 190, 190); 
     border-color: #999;
 }
 
