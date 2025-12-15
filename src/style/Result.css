@@ -26,23 +26,27 @@
 th:last-child {
     border-right: none;
 }
+
 .pagination-controls {
     display: flex;
     justify-content: center;
     gap: 10px;
     align-items: center;
-    margin-top: auto; 
+    margin-top: auto;
     padding-top: 20px;
     text-align: center;
 }
-.pagination-controls span{
+
+.pagination-controls span {
     font-weight: 500;
 }
-.page-btn {
+
+.page-btn,
+.show-more-btn {
     height: 50px;
     width: 100px;
-    background-color: #fff; 
-    border: 1px solid rgb(192, 190, 190); 
+    background-color: #fff;
+    border: 1px solid rgb(192, 190, 190);
     border-radius: 20px;
     color: #333;
     padding: 8px 16px;
@@ -52,8 +56,9 @@ th:last-child {
     transition: all 0.2s ease;
 }
 
-.page-btn:hover:not(:disabled) {
-    background-color:  rgb(192, 190, 190); 
+.page-btn:hover:not(:disabled),
+.show-more-btn:hover:not(:disabled) {
+    background-color: rgb(192, 190, 190);
     border-color: #999;
 }
 
@@ -62,4 +67,8 @@ th:last-child {
     background-color: #fafafa;
     border-color: #e6e6e6;
     cursor: not-allowed;
+}
+
+.show-more-btn:disabled {
+    visibility: hidden;
 }

@@ -1,56 +1,58 @@
 import '../style/Result.css'
 import React, { useMemo } from 'react';
+import { isMobile } from 'react-device-detect'
+
 // import vehicleData from '../data/dummy_small.json'
 import {
-  useReactTable,
-  getCoreRowModel,
-  getPaginationRowModel, 
-  flexRender,
+    useReactTable,
+    getCoreRowModel,
+    getPaginationRowModel,
+    flexRender,
 } from '@tanstack/react-table';
 
 import type { Vehicle } from '../utils/Vehicle';
 
 interface SelectedFilters {
-  country?: string;
-  type?: string;
-  make?: string;
-  model?: string;
-  year?: number;
-  engine?: string;
-  fuel?: string;
+    country?: string;
+    type?: string;
+    make?: string;
+    model?: string;
+    year?: number;
+    engine?: string;
+    fuel?: string;
 }
 
 interface ResultProps {
-  data: Vehicle[];
-  filters: SelectedFilters; 
+    data: Vehicle[];
+    filters: SelectedFilters;
 }
 
-function Result({ data, filters }: ResultProps){
+function Result({ data, filters }: ResultProps) {
 
     const columns = useMemo(
-    () => [
-        {
-            header: 'Model',
-            accessorKey: 'model',
-        },
-        {
-            header: 'Engine Size',
-            accessorKey: 'engine_size',
-        },
-        {
-            header: 'Fuel Type',
-            accessorKey: 'fuel_type',
-        },
-        {
-            header: 'Year Start',
-            accessorKey: 'year_start',
-        },
-        {
-            header: 'Year End',
-            accessorKey: 'year_end',
-        },
-    ],
-    []
+        () => [
+            {
+                header: 'Model',
+                accessorKey: 'model',
+            },
+            {
+                header: 'Engine Size',
+                accessorKey: 'engine_size',
+            },
+            {
+                header: 'Fuel Type',
+                accessorKey: 'fuel_type',
+            },
+            {
+                header: 'Year Start',
+                accessorKey: 'year_start',
+            },
+            {
+                header: 'Year End',
+                accessorKey: 'year_end',
+            },
+        ],
+        []
     );
 
     const table = useReactTable({
@@ -78,7 +80,8 @@ function Result({ data, filters }: ResultProps){
 
             {missingFilters.length > 0 ? (
                 <div className="empty-state">
-                    <p>Harap pilih <strong>{missingFilters.join(", ")}</strong> untuk melihat hasil.</p>                </div>
+                    <p>Harap pilih <strong>{missingFilters.join(", ")}</strong> untuk melihat hasil.</p>
+                </div>
             ) : (
                 <>
                     <table className='result-table'>
@@ -111,7 +114,7 @@ function Result({ data, filters }: ResultProps){
                                 ))
                             ) : (
                                 <tr>
-                                    <td colSpan={columns.length} style={{textAlign: 'center', padding: '20px'}}>
+                                    <td colSpan={columns.length} style={{ textAlign: 'center', padding: '20px' }}>
                                         Tidak ada data kendaraan yang cocok.
                                     </td>
                                 </tr>
@@ -119,8 +122,10 @@ function Result({ data, filters }: ResultProps){
                         </tbody>
                     </table>
 
+                    {/* {Pagination on Mobile} */}
+
                     {/* {Pagination} */}
-                    {table.getRowModel().rows.length > 0 && (
+                    {table.getRowModel().rows.length > 0 && !isMobile ? (
                         <div className="pagination-controls" >
                             <button
                                 className="page-btn"
@@ -129,7 +134,7 @@ function Result({ data, filters }: ResultProps){
                             >
                                 Previous
                             </button>
-                            
+
                             <span >
                                 Page {table.getState().pagination.pageIndex + 1} of {table.getPageCount()}
                             </span>
@@ -141,6 +146,22 @@ function Result({ data, filters }: ResultProps){
                             >
                                 Next
                             </button>
+                        </div>
+                    ) : (
+                        <div className="pagination-controls">
+                            <button
+                                className='show-more-btn'
+                                onClick={() => {
+                                    const currPageSize = table.getState().pagination.pageSize;
+                                    table.setPageSize(currPageSize + 13)
+                                }
+                                }
+
+                                disabled={!table.getCanNextPage()}
+                            >
+                                Show More
+                            </button>
+
                         </div>
                     )}
                 </>
