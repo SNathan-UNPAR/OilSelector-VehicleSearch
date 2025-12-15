@@ -1,5 +1,5 @@
 import '../style/Result.css'
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import { isMobile } from 'react-device-detect'
 
 // import vehicleData from '../data/dummy_small.json'
